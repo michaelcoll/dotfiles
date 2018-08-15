@@ -4,8 +4,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/home/spyder/.oh-my-zsh
 
-export DEFAULT_USER=spyder
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -53,7 +51,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux gradle mvn yarn buffalo zsh-autosuggestions)
+plugins=(git archlinux gradle mvn yarn zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,8 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Custom
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Yaourt
 export VISUAL="vim"
@@ -105,3 +103,4 @@ prompt pure
 export GOROOT="/usr/lib/go"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
