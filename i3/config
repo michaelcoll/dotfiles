@@ -42,7 +42,7 @@ smart_gaps on
 # I use Compton for composite, change the following line if you use xcompmgr or whatever
 exec --no-startup-id compton
 
-exec --no-startup-id feh --bg-fill /home/spyder/Images/Mountains-cloud-wallpaper-HD.jpg
+exec --no-startup-id feh --bg-fill ~/Images/Mountains-cloud-wallpaper-HD.jpg
 
 # I use Firefox as default browser
 set $browser opera
