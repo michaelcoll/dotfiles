@@ -1,0 +1,26 @@
+#/bin/sh
+
+PWD=$(pwd)
+
+ln -vfs $PWD/gitconfig ~/.gitconfig
+ln -vfs $PWD/.fonts ~/.fonts
+
+# urxvt
+ln -vfs $PWD/.Xdefaults ~/.Xdefaults
+
+# zsh
+ln -vfs $PWD/.zshrc ~/.zshrc
+ln -vfs $PWD/oh-my-zsh ~/.oh-my-zsh
+
+# vim
+ln -vfs $PWD/vim/.vimrc ~/.vimrc
+ln -vfs $PWD/vim/.vim ~/.vim
+
+# i3
+mkdir ~/.config
+ln -vfs $PWD/i3 ~/.config
+ln -vfs $PWD/rofi ~/.config
+
+# Gpg
+mkdir ~/.gnupg
+ln -vfs $PWD/gpg/gpg.conf ~/.gnupg/gpg.conf
