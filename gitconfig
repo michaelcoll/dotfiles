@@ -8,6 +8,8 @@
     lg = !"git lg1"
     commit = commit -S
     cm = commit -S -m
+    s = status
+    unstage = reset HEAD --
 [user]
     email = mick.coll@gmail.com
     name = Michaël COLL
