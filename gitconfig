@@ -8,7 +8,7 @@
     lg = !"git lg1"
     commit = commit -S
     cm = commit -S -m
-    s = status
+    s = status -sb
     unstage = reset HEAD --
 [user]
     email = mick.coll@gmail.com
